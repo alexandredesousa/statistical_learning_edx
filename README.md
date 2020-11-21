@@ -30,8 +30,8 @@ MBPdeAlexandre:statistical_learning_edx alexandre.c.sousa$ git branch -a
   remotes/origin/main
 ```
 
-### Create virtual environments for development
-#### Python
+## Create virtual environments for development
+### Python
 ```
 MBPdeAlexandre:statistical_learning_edx alexandre.c.sousa$ python --version
 Python 2.7.10
@@ -41,7 +41,7 @@ MBPdeAlexandre:statistical_learning_edx alexandre.c.sousa$ python3.7 -m venv .vi
 MBPdeAlexandre:statistical_learning_edx alexandre.c.sousa$
 ```
 
-#### R
+### R
 ```
 MBPdeAlexandre:statistical_learning_edx alexandre.c.sousa$ mkdir .virtualenvs/sl_r
 MBPdeAlexandre:statistical_learning_edx alexandre.c.sousa$ R
@@ -60,8 +60,8 @@ Save workspace image? [y/n/c]: n
 MBPdeAlexandre:statistical_learning_edx alexandre.c.sousa$ 
 ```
 
-### Activate and deactivate virtual environment
-#### Python
+## Activate and deactivate virtual environment
+### Python
 Activate 
 ```
 MBPdeAlexandre:statistical_learning_edx alexandre.c.sousa$ . .virtualenvs/sl/bin/activate
@@ -73,8 +73,7 @@ Deactivate
 MBPdeAlexandre:statistical_learning_edx alexandre.c.sousa$
 ```
 
-
-#### R
+### R
 Activate
 ```
 > renv::activate(project = ".virtualenvs/sl_r")
@@ -84,4 +83,18 @@ Deactivate
 ```
 > renv::deactivate()
 * renv deactivated -- please restart the R session.
+```
+
+## Instantiate a script from the terminal
+Recall to activate the proper environment, previous to run
+### Python
+```
+(sl) MBPdeAlexandre:statistical_learning_edx alexandre.c.sousa$ python src/py/py_ini.py
+Hi, this is awkward
+```
+
+### R
+```
+MBPdeAlexandre:statistical_learning_edx alexandre.c.sousa$ Rscript src/R/r_ini.R
+[1] "Hi, this is awkward"
 ```
